@@ -12,9 +12,12 @@ elif c > a and c > b:
     print('{} é o maior valor'.format(c))
 '''
 n = int(input('Digite um número: '))
+n2 = int(input('Digite um segundo número: '))
 
-res = n % 2
-if res == 0:
-    print('{} é par.'.format(n))
+resn = n % 2
+resn2 = n2 % 2
+
+if resn == 0 or resn2 == 0:
+    print('Um número par foi digitado.')
 else:
-    print('{} é ímpar.'.format(n))
+    print('Nenhum número par foi digitado.')
