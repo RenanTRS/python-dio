@@ -23,9 +23,20 @@ else:
     print('Nenhum número par foi digitado.')
 '''
 a = float(input('Nota do primeiro bimestre: '))
+if a > 10:
+    a = float(input('Nota inválida, digite novamente: '))
+
 b = float(input('Nota do segundo bimestre: '))
+if b > 10:
+    b = float(input('Nota inválida, digite novamente: '))
+
 c = float(input('Nota do terceiro bimestre: '))
+if c > 10:
+    c = float(input('Nota inválida, digite novamente: '))
+
 d = float(input('Nota do quarto bimestre: '))
+if d > 10:
+    d = float(input('Nota inválida, digite novamente: '))
 
 if a <= 10 and b <= 10 and c <= 10 and d <= 10:
     media = (a + b + c + d)/4
