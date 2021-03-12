@@ -22,29 +22,33 @@ if resn == 0 or resn2 == 0:
 else:
     print('Nenhum número par foi digitado.')
 '''
-a = float(input('Nota do primeiro bimestre: '))
-if a > 10:
+
+#Entrada de dados
+a = float(input('Nota do Primeiro bimestre: '))
+while a > 10:
     a = float(input('Nota inválida, digite novamente: '))
 
-b = float(input('Nota do segundo bimestre: '))
-if b > 10:
+b = float(input('Nota do Segundo bimestre: '))
+while b > 10:
     b = float(input('Nota inválida, digite novamente: '))
 
-c = float(input('Nota do terceiro bimestre: '))
-if c > 10:
+c = float(input('Nota do Terceiro bimestre: '))
+while c > 10:
     c = float(input('Nota inválida, digite novamente: '))
 
-d = float(input('Nota do quarto bimestre: '))
-if d > 10:
+d = float(input('Nota do Quarto bimestre: '))
+while d > 10:
     d = float(input('Nota inválida, digite novamente: '))
 
-if a <= 10 and b <= 10 and c <= 10 and d <= 10:
-    media = (a + b + c + d)/4
-    if media <= 6:
-        print('Média: {} Reprovado!'.format(media))
-    else:
-        print('Média: {} Aprovado!'.format(media))
+#Manipulação de dados
+media = (a + b + c + d)/4
+
+#Saída de dados
+print('='*20)
+if media <= 6:
+    print('Média: {:.1f} Reprovado!'.format(media))
 else:
-    print('Alguma nota foi digitada incorretamente.')
+    print('Média: {:.1f} Aprovado!'.format(media))
+
 
 #END
