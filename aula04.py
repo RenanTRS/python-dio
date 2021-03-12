@@ -12,7 +12,7 @@ if cont == 2:
     print('O número {} é primo.'.format(n))
 else:
     print('O número {} não é primo.'.format(n))
-'''
+
 n = int(input('Digite um valor: '))
 for num in range(n+1):
     div = 0
@@ -23,5 +23,10 @@ for num in range(n+1):
 
     if div == 2:
         print(num)
+'''
 
+a = 0
+while a < 10:
+    print(a)
+    a += 1
 #END
