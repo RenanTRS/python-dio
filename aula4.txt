@@ -1,0 +1,10 @@
+comando for
+	for x in range(100):
+	    print(x)
+	Este comando vai imprimir de 0 a 99
+
+comando while
+	while a < 10:
+	    print(a)
+	    a += 1
+	Este comando vai imprimir a variável até ela ser menor que 10
