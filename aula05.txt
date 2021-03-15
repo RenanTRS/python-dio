@@ -56,3 +56,9 @@ Tupla é como a lista só que imutável
 
 tupla = (1, 10, 12, 14)
 
+Para transformar uma lista em tupla:
+tupla_animal = tuple(lista_animal)
+
+Para transformar uma tupla em lista:
+lista_numerica = list(tupla)
+
