@@ -1,0 +1,58 @@
+É possível utilizar o for para varrer listas.
+lista_animal = ['cachorro', 'gato', 'elefante']
+
+for x in lista_animal:
+	print(x)
+
+Saída:
+cachorro
+gato
+elefante
+
+Também pode ser usado para somar os itens da lista
+
+lista = [1, 3, 5, 7]
+
+soma = 0
+for y in lista:
+	soma += y
+
+print(soma)
+
+Saída:
+16
+
+funções:
+sum(lista) Soma os valores da lista
+max(lista) Mostra o maior valor da lista
+min(lista) Mostra o menor valor da lista
+
+Pode-se usar o if para verificar um item da lista com o operador in:
+
+if 'lobo' in lista_animal:
+	print('existe este item na lista')
+else:
+	print('não existe este item na lista')
+
+Para incluir um item a lista:
+lista_animal.append('item')
+
+Para remover um item da lista:
+lista_animal.remove('elefante')
+
+Para por em ordem alfabética ou crescente usa-se o sort()
+
+lista.sort()
+lista_animal.sort()
+
+Para por em ordem invertida usa-se reverse()
+
+lista.reverse()
+lista_animal.reverse()
+
+
+TUPLAS:-----------------------
+Tupla é como a lista só que imutável
+
+tupla = (1, 10, 12, 14)
+
