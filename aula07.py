@@ -40,18 +40,19 @@ class Televisao: #Criando uma classe com o nome televisão
         if self.ligada == True:
             self.canal -= 1
 
-tv = Televisao() #instanciando classe
+if __name__ == '__main__': #impede que um outro arquivo acesse esse if
+    tv = Televisao() #instanciando classe
 
-print('Televisão está ligada: {}'.format(tv.ligada)) #chamando método ligada
-tv.power() #chamando método power
-print('Televisão está ligada: {}'.format(tv.ligada))
-tv.power()
-print('Televisão está ligada: {}'.format(tv.ligada))
-tv.power()
-print('Televisão está ligada: {}'.format(tv.ligada))
-print('Canal: {}'.format(tv.canal))
-tv.aumenta_canal() #chamando método aumenta_canal
-tv.aumenta_canal()
-print('Canal: {}'.format(tv.canal))
-tv.diminui_canal() #chamando método diminui_canal
-print('Canal: {}'.format(tv.canal))
+    print('Televisão está ligada: {}'.format(tv.ligada)) #chamando método ligada
+    tv.power() #chamando método power
+    print('Televisão está ligada: {}'.format(tv.ligada))
+    tv.power()
+    print('Televisão está ligada: {}'.format(tv.ligada))
+    tv.power()
+    print('Televisão está ligada: {}'.format(tv.ligada))
+    print('Canal: {}'.format(tv.canal))
+    tv.aumenta_canal() #chamando método aumenta_canal
+    tv.aumenta_canal()
+    print('Canal: {}'.format(tv.canal))
+    tv.diminui_canal() #chamando método diminui_canal
+    print('Canal: {}'.format(tv.canal))
